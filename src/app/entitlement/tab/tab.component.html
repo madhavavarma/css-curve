@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="header">
+        <div>
+            <span class="tab-no" *ngIf="!tabData.isCompleted">{{tabData.tabNo}}</span>
+            <span class="tab-no" *ngIf="tabData.isCompleted"></span>
+            <span>{{tabData.headerText}}</span>
+        </div>
+       
+        <ng-content select="[header]"></ng-content>
+    </div>
+    <div class="body">
+        <ng-content select="[body]"></ng-content>
+    </div>
+</div>

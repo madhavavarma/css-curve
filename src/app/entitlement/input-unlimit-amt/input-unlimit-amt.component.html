@@ -1,0 +1,4 @@
+<div [formGroup]="formGroup">
+    <input type="text" [formControlName]="amountFormControlName" [attr.disabled]="isUnlimitedLimit ? '' : null">
+    <input type="checkbox" [formControlName]="unlimitFormControlName">Unlimited
+</div>

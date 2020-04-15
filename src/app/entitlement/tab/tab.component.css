@@ -1,0 +1,30 @@
+.container {
+    margin: 10px;
+    max-width: 600px;
+    overflow:auto;
+}
+
+.header {
+    padding: 6px;
+    border: 1px solid #888;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header span {
+    margin: 2px;
+}
+
+.tab-no {
+    border: 1px solid lightskyblue;
+    border-radius: 50%;
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+.body {
+    border: 1px solid #888;
+    border-top: 0px;
+    padding: 8px;
+}
+

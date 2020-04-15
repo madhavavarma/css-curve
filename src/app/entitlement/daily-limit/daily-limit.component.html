@@ -1,0 +1,19 @@
+<app-tab #tab [tabData]="tabData">
+    <div body [formGroup]="formGroup">
+        <p>Note: Select the unlimited checkbox to specity an unlimited amount</p>
+        <div>
+            Daily Limit
+            <!-- <input type="text" formControlName="dailyLimit" [attr.disabled]="isUnlimitedLimit ? '' : null">
+            <input type="checkbox" formControlName="isUnlimitedLimit">Unlimited -->
+            <app-input-unlimit-amt 
+            [formGroup]="formGroup"
+            [amountFormControlName]="'dailyLimit'" 
+            [unlimitFormControlName]="'isUnlimitedLimit'"
+            [minAmount]="0"
+            [maxAmount]="unlimitedAmount">
+            </app-input-unlimit-amt>
+            <button [disabled]="dailyLimit<=0">Next</button>
+        </div>
+        
+    </div>
+</app-tab>

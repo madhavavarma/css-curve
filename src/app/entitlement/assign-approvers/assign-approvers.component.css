@@ -1,0 +1,7 @@
+tr, td, th {
+    border: 1px solid grey;
+}
+
+.colspan2 {
+    column-span: 2;
+}

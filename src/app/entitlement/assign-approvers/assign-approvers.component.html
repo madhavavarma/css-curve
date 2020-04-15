@@ -1,0 +1,67 @@
+<app-tab #tab [tabData]="tabData">
+    <div body [formGroup]="formGroup">
+        <p>Note: Some Text here</p>
+        <div>
+            <table>
+                <tr>
+                  <th>Approvers Deselect All Approvers</th>
+                  <th colspan="2">OneTime</th>
+                  <th colspan="2">Recurring</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <app-input-unlimit-amt 
+                    [formGroup]="formGroup"
+                    [amountFormControlName]="'OTL1Amount'" 
+                    [unlimitFormControlName]="'isOTL1UnlimitedLimit'"
+                    [minAmount]="0"
+                    [maxAmount]="dailyLimit">
+                    </app-input-unlimit-amt>
+                  </td>
+                  <td>
+                    <app-input-unlimit-amt 
+                    [formGroup]="formGroup"
+                    [amountFormControlName]="'OTL2Amount'" 
+                    [unlimitFormControlName]="'isOTL2UnlimitedLimit'"
+                    [minAmount]="OTL1Amount"
+                    [maxAmount]="dailyLimit">
+                    </app-input-unlimit-amt>
+                  </td>
+                  <td>
+                    <app-input-unlimit-amt 
+                    [formGroup]="formGroup"
+                    [amountFormControlName]="'RL1Amount'" 
+                    [unlimitFormControlName]="'isRL1UnlimitedLimit'"
+                    [minAmount]="0"
+                    [maxAmount]="dailyLimit">
+                    </app-input-unlimit-amt>
+                  </td>
+                  <td>
+                    <app-input-unlimit-amt 
+                    [formGroup]="formGroup"
+                    [amountFormControlName]="'RL2Amount'" 
+                    [unlimitFormControlName]="'isRL2UnlimitedLimit'"
+                    [minAmount]="RL1Amount"
+                    [maxAmount]="dailyLimit">
+                    </app-input-unlimit-amt>
+                  </td>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                </tr>
+              </table>
+        </div>
+    </div>
+</app-tab>

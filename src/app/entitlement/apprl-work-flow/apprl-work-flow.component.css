@@ -1,0 +1,30 @@
+.container {
+    border: 1px solid #888;
+    width: 70%;
+    margin: auto;
+}
+
+.content {
+    width: 90%;
+    margin: 15px auto;
+}
+
+.acc-details span {
+    display: block;
+}
+
+.panels {
+    border: 1px solid #888;
+    padding: 10px;
+}
+
+.exp-panels {
+    text-align: right;
+}
+
+.btn-exp-panels {
+    border: none;
+    background-color: #fff;
+    color: lightblue;
+    cursor: pointer;
+}

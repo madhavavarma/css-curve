@@ -1,0 +1,19 @@
+<form novalidate [formGroup]="formGroup">
+<div class="container">
+    <div class="content">
+        <h3>Approval Work Flow</h3>
+        <p class="acc-details">
+            <span>Applicable Account(s)</span>
+            <span>Savings *****0002 | Internal Transfer, Wire Transfer, ACH Origination</span>
+        </p>
+        <div class="exp-panels">
+            <button class="btn-exp-panels">Expand all panels</button>
+        </div>
+        <div class="panels">
+            <app-appr-transaction  [formGroup]="formGroup" [nextElement]="dailyLimitElement"></app-appr-transaction>
+            <app-daily-limit #dailyLimitElement [formGroup]="formGroup"></app-daily-limit>
+            <app-assign-approvers [formGroup]="formGroup"></app-assign-approvers>
+        </div>
+    </div>
+</div>
+</form>

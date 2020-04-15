@@ -1,0 +1,41 @@
+.dd-btn {
+    display: inline-block;
+    position: relative;
+}
+
+.btn {
+    border-right: 1px solid grey;
+}
+
+button {
+    border: none;
+    padding: 14px 18px;
+    color: #fff;
+    background-color: #2196F3;
+    font-size: 18px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: absolute;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: black;
+    opacity: 0.2;
+}
+
+.dropdown-content a {
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
