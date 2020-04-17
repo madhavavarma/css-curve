@@ -1,5 +1,18 @@
 # CssCurve
 
+  static numberWithCommas(numberString: string) {
+
+    numberString = numberString.replace(/,/g, '');
+
+    const parts = numberString.split('.');
+
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+    return parts.join('.');
+
+  }
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
 ## Development server
